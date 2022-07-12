@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="/XSLTransform/Convex_cif.xsl" ?>
+<root>
+  <input>
+    <inputCSV>
+        <file>
+            <name>{filename}</name>
+            <url>{filename}</url>
+        </file>
+    </inputCSV>
+  </input>
+  <output>
+    <result>
+      <file>
+        <name>result.tar.gz</name>
+        <url>result.tar.gz</url>
+      </file>
+    </result>
+  </output>
+</root>
