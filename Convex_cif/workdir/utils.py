@@ -56,7 +56,10 @@ def _add_info_xml(out_list) -> None:
         for index, row_data in out_table.iterrows():
             element_row = ET.Element('row')
             element_index = ET.Element('index')
-            element_index.text = str(index + 1)
+            if index == 0:
+                element_index.text = '中心原子'
+            else:
+                element_index.text = str(index)
             element_row.append(element_index)
             for column_name, value in zip(row_data.keys(), row_data.values):
                 element_column = ET.Element(column_name)

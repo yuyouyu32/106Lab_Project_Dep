@@ -237,9 +237,12 @@ class CrystalShell():
                     np.array(range(self.pos_matrix.shape[0])), np.array(idx))
                 self.draw(hull, idx, remain_idx, colormap.pop(0),
                           f'第{i}壳层示意图.jpg')
-                shell = pd.DataFrame(np.around(self.pos_matrix[idx, :], 4),
+                shell = pd.DataFrame(np.around(
+                    self.pos_matrix[[self.center] + idx, :], 4),
                                      columns=['x', 'y', 'z'])
-                shell.insert(0, 'atom', [self.atoms[k] for k in idx])
+                atomnames = [self.atoms[self.center]]
+                shell.insert(0, 'atom',
+                             atomnames + [self.atoms[k] for k in idx])
                 self.shell_and_pics.append((f'第{i}壳层示意图.jpg', shell))
                 self.log.info(msg=f'找到第{i}壳层,正在保存')
                 i += 1
