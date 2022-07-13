@@ -49,7 +49,7 @@ def _add_info_xml(out_list) -> None:
 
     for out in out_list:
         picture_name, out_table = out
-        name = picture_name.split('示意图.jpg')[0]
+        name = picture_name.rstrip('示意图.jpg')
         element_result = ET.Element(name)
         # Table
         element_table = ET.Element('table')
