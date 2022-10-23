@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'Convex_cif'
-WORKDIR = '/home/lab106/WorkSpace/Convex_cif/workdir'
+WORKDIR = '/home/admin/WorkSpace//Convex_cif/workdir'
 EXECUTE = 'Convex_cif_API.py'
 COMMAND = 'python Convex_cif_API.py {task_id}'
 PARALLELISM = 4

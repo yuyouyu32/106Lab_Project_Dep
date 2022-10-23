@@ -1,0 +1,46 @@
+Version SISSO.3.0.2, June, 2020.
+================================================================================
+
+Reading data from train.dat ...
+Reading parameters from SISSO.in: 
+--------------------------------------------------------------------------------
+Restarts :     F
+Descriptor dimension:        4
+Property type:     1
+Total number of properties:        1
+Task_weighting:        1
+Number of samples for each property:        5
+Number of scalar features:        3
+Number of recursive calls for feature transformation (rung of the feature space):        3
+Max feature complexity (number of operators in a feature):       10
+Number of dimension(unit)-type (for dimension analysis):        2
+Dimension type for each primary feature: 
+  1.00  0.00
+  1.00  0.00
+  0.00  1.00
+Lower bound of the max abs. data value for the selected features:     0.10000E-02
+Upper bound of the max abs. data value for the selected features:     0.10000E+06
+Size of the SIS-selected (single) subspace :       10      10      10      10
+Operators for feature construction: (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) 
+Method for sparsification:  L0        
+Number of the top ranked models to output:      100
+Fitting intercept?      T
+Metric for model selection: RMSE
+--------------------------------------------------------------------------------
+
+Feature Construction and Descriptor Identification (FCDI) starts ...
+
+iteration:   1
+--------------------------------------------------------------------------------
+FC starts ...
+Standard Deviation (SD) of property 001:   14.14214
+Total number of features in the space phi00:              3
+Total number of features in the space phi01:             15
+Total number of features in the space phi02:            269
+Total number of features in the space phi03:         111675
+Size of the SIS-selected subspace from phi03:         10
+Wall-clock time (second) for this FC:            0.07
+FC done!
+
+DI starts ...
+total number of SIS-selected features from all iterations:         10

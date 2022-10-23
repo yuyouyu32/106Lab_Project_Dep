@@ -8,14 +8,22 @@ import tarfile
 import time
 import json
 
+
+
 from flask import Flask, request, send_from_directory
 from flask_cors import CORS
 
 from util import XMLNode, XMLUtil, RedisPool, MD5Util, CMDUtil
+import platform
+system_plat = platform.system()
 
-PLATFORM = 'windows'
+if system_plat == "Linux":
+    PLATFORM = 'linux'    # or 'linux'
+else:
+    PLATFORM = 'windows'
+    
 MODNAME = 'LSTM'
-WORKDIR = 'D:\\LSTM\\workdir'
+WORKDIR = '/home/admin/WorkSpace/LSTM/workdir'
 EXECUTE = 'LSTM_API.py'
 COMMAND = 'python LSTM_API.py {task_id}'
 PARALLELISM = 4

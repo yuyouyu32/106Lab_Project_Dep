@@ -179,7 +179,7 @@ def _read_parameters():
     try:
         parameters['result_retain'] = int(parameters['result_retain'])
     except:
-        parameters['result_retain'] = 4
+        parameters['result_retain'] = 2
     try:
         parameters['random_state'] = int(parameters['random_state'])
     except:

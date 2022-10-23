@@ -252,6 +252,7 @@ def preWithNSGA(file_name, target_number,clf_str,para,start_index,end_index,targ
 
 def arr2frame(name_list, start_index,end_index,target_index, Phen, ObjV):
     feature_name = name_list[start_index:end_index]
+    print(name_list,start_index,end_index,target_index)
     target_name = [name_list[i] for i in target_index]
     feature_name.extend(target_name)
     result = []
@@ -293,12 +294,12 @@ def main():
 
     try:
         Phen, ObjV, frame = NSGA2(file_name=parameters["inputCSV"], target_number=parameters['target_number'], clf_str=parameters['models'], para=parameters['parameter'],
-                             start_index=parameters['start_index']-1, end_index=parameters['end_index'], target_index=map(lambda x:x-1, parameters['target_index']), 
-                             tatget_number=parameters['target_number'], optimization_direction=parameters['optimization_direction'],
-                             dimension=parameters['dimension'], feature_types=parameters['feature_types'], feature_lower=parameters['feature_lower'], feature_upper=parameters['feature_upper'],
-                             is_lower=parameters['is_lower'], is_upper=parameters['is_upper'], population_number=parameters['population_number'], 
-                             max_ge=parameters['max_ge'], cross_possibility=parameters['cross_possibility'],
-                             preference=parameters['preference'],weight=parameters['weight'])
+                            start_index=parameters['start_index']-1, end_index=parameters['end_index'], target_index=list(map(lambda x:x-1, parameters['target_index'])), 
+                            tatget_number=parameters['target_number'], optimization_direction=parameters['optimization_direction'],
+                            dimension=parameters['dimension'], feature_types=parameters['feature_types'], feature_lower=parameters['feature_lower'], feature_upper=parameters['feature_upper'],
+                            is_lower=parameters['is_lower'], is_upper=parameters['is_upper'], population_number=parameters['population_number'], 
+                            max_ge=parameters['max_ge'], cross_possibility=parameters['cross_possibility'],
+                            preference=parameters['preference'],weight=parameters['weight'])
     except Exception as e:
         _add_error_xml("NSGA2 Error", str(e))
         with open('log.txt', 'a') as fp:

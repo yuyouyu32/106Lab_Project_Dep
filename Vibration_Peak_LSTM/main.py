@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'Vibration_Peak_LSTM'
-WORKDIR = '/home/lab106/WorkSpace/Vibration_Peak_LSTM/workdir'
+WORKDIR = '/home/admin/WorkSpace/Vibration_Peak_LSTM/workdir'
 EXECUTE = 'Peak_LSTM_API.py'
 COMMAND = 'python Peak_LSTM_API.py {task_id}'
 PARALLELISM = 4

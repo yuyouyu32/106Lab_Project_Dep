@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'RNN'
-WORKDIR = '/home/lab106/WorkSpace/RNN/workdir'
+WORKDIR = '/home/admin/WorkSpace//RNN/workdir'
 EXECUTE = 'RNN_API.py'
 COMMAND = 'python RNN_API.py {task_id}'
 PARALLELISM = 4

@@ -13,9 +13,15 @@ from flask_cors import CORS
 
 from util import XMLNode, XMLUtil, RedisPool, MD5Util, CMDUtil
 
-PLATFORM = 'windows'
+import platform
+system_plat = platform.system()
+
+if system_plat == "Linux":
+    PLATFORM = 'linux'    # or 'linux'
+else:
+    PLATFORM = 'windows'
 MODNAME = 'RemoteDataCollection'
-WORKDIR = 'D:\\RemoteDataCollection\\workdir'
+WORKDIR = '/home/admin/WorkSpace/RemoteDataCollection/workdir'
 EXECUTE = 'RDC_API.py'
 COMMAND = 'python RDC.py {task_id}'
 PARALLELISM = 4

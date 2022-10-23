@@ -1,0 +1,176 @@
+Version SISSO.3.0.2, June, 2020.
+================================================================================
+
+Reading data from train.dat ...
+Reading parameters from SISSO.in: 
+--------------------------------------------------------------------------------
+Restarts :     F
+Descriptor dimension:        4
+Property type:     1
+Total number of properties:        1
+Task_weighting:        1
+Number of samples for each property:      114
+Number of scalar features:       18
+Number of recursive calls for feature transformation (rung of the feature space):        3
+Max feature complexity (number of operators in a feature):        3
+Number of dimension(unit)-type (for dimension analysis):       18
+Dimension type for each primary feature: 
+  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00  0.00
+  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  1.00
+Lower bound of the max abs. data value for the selected features:     0.10000E-02
+Upper bound of the max abs. data value for the selected features:     0.10000E+06
+Size of the SIS-selected (single) subspace :     1000    1000    1000    1000
+Operators for feature construction: (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) 
+Method for sparsification:  L0        
+Number of the top ranked models to output:      100
+Fitting intercept?      T
+Metric for model selection: RMSE
+--------------------------------------------------------------------------------
+
+Feature Construction and Descriptor Identification (FCDI) starts ...
+
+iteration:   1
+--------------------------------------------------------------------------------
+FC starts ...
+Standard Deviation (SD) of property 001:    0.80036
+Total number of features in the space phi00:             18
+Total number of features in the space phi01:            673
+Total number of features in the space phi02:         228386
+Total number of features in the space phi03:        1578182
+Size of the SIS-selected subspace from phi03:       1000
+Wall-clock time (second) for this FC:          124.91
+FC done!
+
+DI starts ...
+total number of SIS-selected features from all iterations:       1000
+L0 starts ...
+
+Model/descriptor for generating residual:
+================================================================================
+  1D descriptor (model): 
+Total RMSE,MaxAE:   0.278381  0.785879
+@@@descriptor: 
+                     17:[(site_nnd_Ang/exp((bulk_nnd_Ang/f_d)))]
+       coefficients_001:     0.6220293532E+01
+          Intercept_001:    -0.1132151850E+02
+         RMSE,MaxAE_001:     0.2783809139E+00    0.7858792165E+00
+================================================================================
+Wall-clock time (second) for this DI:            5.24
+DI done!
+
+iteration:   2
+--------------------------------------------------------------------------------
+FC starts ...
+File containing the features to be rejected: feature_space/Uspace.name
+Total number of features in the space phi00:             18
+Total number of features in the space phi01:            673
+Total number of features in the space phi02:         228386
+Total number of features in the space phi03:        1578182
+Size of the SIS-selected subspace from phi03:       1000
+Wall-clock time (second) for this FC:          127.46
+FC done!
+
+DI starts ...
+total number of SIS-selected features from all iterations:       2000
+L0 starts ...
+
+Model/descriptor for generating residual:
+================================================================================
+  2D descriptor (model): 
+Total RMSE,MaxAE:   0.177388  0.549973
+@@@descriptor: 
+                   1654:[(cos(CN)*(W_d_eV)^3)]
+                     87:[sqrt((V_ad^2*exp(f_d)))]
+       coefficients_001:    -0.3656834556E-01    0.1519620866E-01
+          Intercept_001:    -0.1106372943E+01
+         RMSE,MaxAE_001:     0.1773884871E+00    0.5499734618E+00
+================================================================================
+Wall-clock time (second) for this DI:            5.75
+DI done!
+
+iteration:   3
+--------------------------------------------------------------------------------
+FC starts ...
+File containing the features to be rejected: feature_space/Uspace.name
+Total number of features in the space phi00:             18
+Total number of features in the space phi01:            673
+Total number of features in the space phi02:         228386
+Total number of features in the space phi03:        1578182
+Size of the SIS-selected subspace from phi03:       1000
+Wall-clock time (second) for this FC:          126.87
+FC done!
+
+DI starts ...
+total number of SIS-selected features from all iterations:       3000
+L0 starts ...
+
+Model/descriptor for generating residual:
+================================================================================
+  3D descriptor (model): 
+Total RMSE,MaxAE:   0.153129  0.570851
+@@@descriptor: 
+                     65:[((f_d)^3*(r_d_Ang*bulk_nnd_Ang))]
+                   1654:[(cos(CN)*(W_d_eV)^3)]
+                   2044:[(cos((r_d_Ang*site_no))/EA_eV)]
+       coefficients_001:     0.1452172072E-02   -0.4026023754E-01    0.2809035639E+00
+          Intercept_001:    -0.1400569821E+01
+         RMSE,MaxAE_001:     0.1531293070E+00    0.5708505035E+00
+================================================================================
+Wall-clock time (second) for this DI:           24.71
+DI done!
+
+iteration:   4
+--------------------------------------------------------------------------------
+FC starts ...
+File containing the features to be rejected: feature_space/Uspace.name
+Total number of features in the space phi00:             18
+Total number of features in the space phi01:            673
+Total number of features in the space phi02:         228386
+Total number of features in the space phi03:        1578182
+Size of the SIS-selected subspace from phi03:       1000
+Wall-clock time (second) for this FC:          126.43
+FC done!
+
+DI starts ...
+total number of SIS-selected features from all iterations:       4000
+L0 starts ...
+
+Final model/descriptor to report
+================================================================================
+  4D descriptor (model): 
+Total RMSE,MaxAE:   0.139766  0.387619
+@@@descriptor: 
+                    348:[(bulk_nnd_Ang/sin(log(f_d)))]
+                   1413:[(cbrt((DOS_sp_eV^(-1)/EA_eV))/IP_eV)]
+                   1654:[(cos(CN)*(W_d_eV)^3)]
+                   2639:[((K_d_eV*sin(site_no))/W_eV)]
+       coefficients_001:     0.2244096709E+01   -0.1564114163E+02   -0.2815987062E-01    0.7879392994E-01
+          Intercept_001:    -0.5580786552E+01
+         RMSE,MaxAE_001:     0.1397658925E+00    0.3876193460E+00
+================================================================================
+Wall-clock time (second) for this DI:         6117.59
+DI done!
+
+FCDI done !
+
+--------------------------------------------------------------------------------
+Total wall-clock time (second):         6660.63
+
+                                               Have a nice day !    
+

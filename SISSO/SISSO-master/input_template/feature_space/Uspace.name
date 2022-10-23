@@ -1,0 +1,10 @@
+(feature1)  corr=      1.0000
+(sin(exp(-feature1))*(feature1*exp(feature1)))  corr=      1.0000
+((feature1/exp(feature1))/sin(exp(-feature1)))  corr=      1.0000
+((cbrt(feature1))^2*log((feature1+feature2)))  corr=      1.0000
+((log(feature1)*sqrt(feature1))+(sqrt(feature1)/exp(feature1)))  corr=      1.0000
+log(sin(exp(-feature1)))  corr=      1.0000
+(cbrt(cbrt(feature1))*(log(feature1)*sqrt(feature1)))  corr=      1.0000
+((feature1/exp(feature1))-(feature1+(feature1+feature2)))  corr=      1.0000
+((feature1/exp(feature1))+(feature1+(feature1+feature2)))  corr=      1.0000
+(cbrt(feature1)*exp(cbrt(feature1)))  corr=      1.0000

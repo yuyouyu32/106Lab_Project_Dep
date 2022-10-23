@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'Original_SISSO'
-WORKDIR = '/home/lab106/WorkSpace/Original_SISSO/workdir'
+WORKDIR = '/home/admin/WorkSpace/Original_SISSO/workdir'
 EXECUTE = 'Original_SISSO_API.py'
 COMMAND = 'python Original_SISSO_API.py {task_id}'
 PARALLELISM = 4

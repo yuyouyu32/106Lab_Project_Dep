@@ -360,21 +360,24 @@ def _add_info_xml(picture_name, result_models) -> None:
     tree = ET.parse("./result.xml")
     root = tree.getroot()
     output = tree.find('output')
-
+    print(result_models)
     # Models
     for module_name, module_para in result_models.items():
-        element_module = ET.Element(module_name)
-        for para_name, para_value in module_para[1].items():
-            element_para = ET.Element(para_name)
-            try:
-                element_para.text = str(round(para_value, 6))
-            except:
-                element_para.text = str(para_value)
-            element_module.append(element_para)
-        element_R2 = ET.Element('R2')
-        element_R2.text = str(round(module_para[2], 6))
-        element_module.append(element_R2)
-        output.append(element_module)
+        try:
+            element_module = ET.Element(module_name)
+            for para_name, para_value in module_para[1].items():
+                element_para = ET.Element(para_name)
+                try:
+                    element_para.text = str(round(para_value, 6))
+                except:
+                    element_para.text = str(para_value)
+                element_module.append(element_para)
+            element_R2 = ET.Element('R2')
+            element_R2.text = str(round(module_para[2], 6))
+            element_module.append(element_R2)
+            output.append(element_module)
+        except Exception as e:
+            continue
     # Picture
     element_pictures = ET.Element('Distribution_Chart')
     element_picture = ET.Element('picture')

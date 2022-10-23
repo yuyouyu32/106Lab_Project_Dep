@@ -12,10 +12,16 @@ from flask import Flask, request, send_from_directory
 from flask_cors import CORS
 
 from util import XMLNode, XMLUtil, RedisPool, MD5Util, CMDUtil
+import platform
+system_plat = platform.system()
 
-PLATFORM = 'linux'    # or 'linux'
+if system_plat == "Linux":
+    PLATFORM = 'linux'    # or 'linux'
+else:
+    PLATFORM = 'windows'
+    
 MODNAME = 'arima'
-WORKDIR = '/home/lab106/WorkSpace/arima/workdir'
+WORKDIR = '/home/admin/WorkSpace/arima/workdir'
 EXECUTE = 'arima_API.py'
 COMMAND = 'python arima_API.py {task_id}'
 PARALLELISM = 4

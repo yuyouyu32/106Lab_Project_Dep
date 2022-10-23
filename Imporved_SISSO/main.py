@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'Improved_SISSO'
-WORKDIR = '/home/lab106/WorkSpace/Imporved_SISSO/workdir'
+WORKDIR = '/home/admin/WorkSpace/Imporved_SISSO/workdir'
 EXECUTE = 'Improved_SISSO_API.py'
 COMMAND = 'python Improved_SISSO_API.py {task_id}'
 PARALLELISM = 4

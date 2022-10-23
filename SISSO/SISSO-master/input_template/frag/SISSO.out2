@@ -1,0 +1,85 @@
+Version SISSO.3.0.2, June, 2020.
+================================================================================
+
+Reading data from train.dat ...
+Reading parameters from SISSO.in: 
+--------------------------------------------------------------------------------
+Restarts :     T
+Descriptor dimension:        5
+Property type:     1
+Total number of properties:        1
+Task_weighting:        1
+Number of samples for each property:      349
+Number of scalar features:       21
+Number of recursive calls for feature transformation (rung of the feature space):        3
+Max feature complexity (number of operators in a feature):        3
+Number of dimension(unit)-type (for dimension analysis):        4
+Dimension type for each primary feature: 
+  1.00  0.00  0.00  0.00
+  1.00  0.00  0.00  0.00
+  1.00  0.00  0.00  0.00
+  1.00  0.00  0.00  0.00
+  1.00  0.00  0.00  0.00
+  1.00  0.00  0.00  0.00
+  0.00  1.00  0.00  0.00
+  0.00  1.00  0.00  0.00
+  0.00  1.00  0.00  0.00
+  0.00  1.00  0.00  0.00
+  0.00  0.00  1.00  0.00
+  0.00  0.00  1.00  0.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+  0.00  0.00  0.00  1.00
+Lower bound of the max abs. data value for the selected features:     0.10000E-02
+Upper bound of the max abs. data value for the selected features:     0.10000E+06
+Size of the SIS-selected (single) subspace :     4000    4000    4000    4000    4000
+Operators for feature construction: (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) (+)(-)(*)(/)(exp)(exp-)(^-1)(^2)(^3)(sqrt)(cbrt)(log)(|-|)(^6)(sin)(cos) 
+Method for sparsification:  L0        
+Number of the top ranked models to output:      100
+Fitting intercept?      T
+Metric for model selection: RMSE
+--------------------------------------------------------------------------------
+
+Feature Construction and Descriptor Identification (FCDI) starts ...
+
+iteration:   2
+--------------------------------------------------------------------------------
+
+DI starts ...
+total number of SIS-selected features from all iterations:       8000
+L0 starts ...
+
+Model/descriptor for generating residual:
+================================================================================
+  2D descriptor (model): 
+Total RMSE,MaxAE:  79.477365463.357979
+@@@descriptor: 
+                   5249:[(TT/exp((C/Cr)))]
+                   4524:[exp(-(TT*(Cr)^6))]
+       coefficients_001:    -0.1660711005E+01   -0.7466148835E+03
+          Intercept_001:     0.1199666706E+04
+         RMSE,MaxAE_001:     0.7947736532E+02    0.4633579787E+03
+================================================================================
+Wall-clock time (second) for this DI:          178.37
+DI done!
+
+iteration:   3
+--------------------------------------------------------------------------------
+FC starts ...
+File containing the features to be rejected: feature_space/Uspace.name
+Total number of features in the space phi00:             21
+Total number of features in the space phi01:            891
+Total number of features in the space phi02:         530312
+Total number of features in the space phi03:        2475061
+Size of the SIS-selected subspace from phi03:       4000
+Wall-clock time (second) for this FC:          858.79
+FC done!
+
+DI starts ...
+total number of SIS-selected features from all iterations:      12000

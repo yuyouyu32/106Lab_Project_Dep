@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'FSRL'
-WORKDIR = '/home/lab106/WorkSpace/FSRL/workdir'
+WORKDIR = '/home/admin/WorkSpace//FSRL/workdir'
 EXECUTE = 'FSRL_API.py'
 COMMAND = 'python FSRL_API.py {task_id}'
 PARALLELISM = 4

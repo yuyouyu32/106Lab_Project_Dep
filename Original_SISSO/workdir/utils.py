@@ -50,8 +50,8 @@ def _get_result(pathsrc):
         dic_c["Formula_"+str(i+1)+"D"]=coeffic.popleft()
         dic_b["Formula_"+str(i+1)+"D"]=bias.popleft()
         tmpr=rmse.popleft()
-        dic_rmse["Formula" + str(i+1)+"D"]=tmpr[0]
-        dic_mae["Formula" + str(i+1)+"D"]=tmpr[1]
+        dic_rmse["Formula" +str(i+1)+"D"]=tmpr[0]
+        dic_mae["Formula" +str(i+1)+"D"]=tmpr[1]
     res={}
     res['features']=dic_f
     res['coefficients']=dic_c

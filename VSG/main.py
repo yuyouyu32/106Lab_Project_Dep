@@ -13,9 +13,16 @@ from flask_cors import CORS
 
 from util import XMLNode, XMLUtil, RedisPool, MD5Util, CMDUtil
 
-PLATFORM = 'windows'
+import platform
+system_plat = platform.system()
+
+if system_plat == "Linux":
+    PLATFORM = 'linux'    # or 'linux'
+else:
+    PLATFORM = 'windows'
+    
 MODNAME = 'VSG'
-WORKDIR = 'D:\\VSG\\workdir'
+WORKDIR = '/home/admin/WorkSpace/VSG/workdir'
 EXECUTE = 'VSG_API.py'
 COMMAND = 'python VSG_API.py {task_id}'
 PARALLELISM = 4

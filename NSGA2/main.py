@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'NSGA2'
-WORKDIR = f'/home/lab106/WorkSpace/NSGA2/workdir'
+WORKDIR = f'/home/admin/WorkSpace//NSGA2/workdir'
 EXECUTE = 'NSGA2_API.py'
 COMMAND = 'python NSGA2_API.py {task_id}'
 PARALLELISM = 4

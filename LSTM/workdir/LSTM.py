@@ -123,7 +123,7 @@ def draw(raw_data, predict_data, picture_name, yname):
     # plt.show()
     plt.xlabel("index")
     plt.ylabel(yname)
-    plt.title("Prediction value VS Actrual value")
+    plt.title("Predicted value VS Actrual value")
     plt.savefig(picture_name)
     plt.clf()
 
@@ -226,8 +226,8 @@ def _add_info_xml(picture_names, r2_scores, predictions, columns) -> None:
         import xml.etree.ElementTree as ET
     import os
     # Back up result.xml
-    os.system('cp ./result.xml ./result_before.xml')  # Linux
-    # os.system('copy .\\result.xml .\\result_before.xml')    # Win
+    # os.system('cp ./result.xml ./result_before.xml')  # Linux
+    os.system('copy .\\result.xml .\\result_before.xml')    # Win
 
     tree = ET.parse("./result.xml")
     root = tree.getroot()
@@ -290,7 +290,7 @@ def _add_info_xml(picture_names, r2_scores, predictions, columns) -> None:
     with open('result.xml', 'r') as fp:
         lines = [line for line in fp]
         lines.insert(1, '<?xml-stylesheet type="text/xsl" href="/XSLTransform/LSTM.xsl" ?>\n')
-    with open('result.xml', 'w') as fp:
+    with open('result.xml', 'w', encoding='utf-8') as fp:
         fp.write(''.join(lines))
 
 
@@ -303,7 +303,6 @@ def _add_error_xml(error_message, error_detail):
     # Back up result.xml
     # os.system('cp ./result.xml ./result_before.xml')  # Linux
     os.system('copy .\\result.xml .\\result_before.xml')    # Win
-
     tree = ET.parse("./result.xml")
     root = tree.getroot()
     output = tree.find('output')

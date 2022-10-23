@@ -22,7 +22,7 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'Multimodal'
-WORKDIR = '/home/lab106/WorkSpace/Multimodal/workdir'
+WORKDIR = '/home/admin/WorkSpace/Multimodal/workdir'
 EXECUTE = 'Multimodal_API.py'
 COMMAND = 'python Multimodal_API.py {task_id}'
 PARALLELISM = 4

@@ -1,6 +1,6 @@
 nsf={nsf}              
 rung={rung}               
-opset='(+)(-)(*)(/)(exp)(log)(^-1)(^2)(^3)(sqrt)(cbrt)(|-|)'  
+opset='(+)(-)(*)(/)(exp)(log)(^-1)(^2)(^3)(sqrt)(cbrt)(|-|)(exp-)(^6)(sin)(cos)'  
 maxcomplexity={maxcomplexity}     
 dimclass={dimclass}      
 maxfval_lb=1e-3      

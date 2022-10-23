@@ -1,31 +1,42 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<?xml-stylesheet type="text/xsl" href="/XSLTransform/Multimodal.xsl" ?>
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="/XSLTransform/FSRL.xsl" ?>
 <root>
-  <input>
-    <pictureCSV>
-        <file>
-            <name>{filename}</name>
-            <url>{filename}</url>
-        </file>
-    </pictureCSV>
-    <originalCSV>
-        <file>
-            <name>{filename}</name>
-            <url>{filename}</url>
-        </file>
-    </originalCSV>
-    <start_index>{start_index}</start_index>
-    <end_index>{end_index}</end_index>
-    <target_name>{target_name}</target_name>
-    <learning_rate>{learning_rate}</learning_rate>
-    <epochs>{epochs}</epochs>
-  </input>
-  <output>
-    <result>
-      <file>
-        <name>result.tar.gz</name>
-        <url>result.tar.gz</url>
-      </file>
-    </result>
-  </output>
+	<input>
+		<pictureCSV>
+			<file>
+				<name>{filename}</name>
+				<url>{filename}</url>
+			</file>
+		</pictureCSV>
+		<originalCSV>
+			<file>
+				<name>{filename}</name>
+				<url>{filename}</url>
+			</file>
+		</originalCSV>
+		<start_index>{start_index}</start_index>
+		<end_index>{end_index}</end_index>
+		<target_name>{target_name}</target_name>
+		<learning_rate>{learning_rate}</learning_rate>
+		<epochs>{epochs}</epochs>
+	</input>
+	<output>
+		<result>
+			<file>
+				<name>result.tar.gz</name>
+				<url>result.tar.gz</url>
+			</file>
+		</result>
+		<Score>
+			<R2>0.87</R2>
+		</Score>
+		<Pictures>
+			<picture>
+				<file>
+					<name>Loss.png</name>
+					<url>Loss.png</url>
+				</file>
+			</picture>
+		</Pictures>
+	</output>
 </root>
