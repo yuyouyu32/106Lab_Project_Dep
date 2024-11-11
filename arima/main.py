@@ -21,7 +21,14 @@ else:
     PLATFORM = 'windows'
     
 MODNAME = 'arima'
-WORKDIR = '/home/admin/WorkSpace/arima/workdir'
+# 获取当前脚本所在目录的上一级目录
+default_base_dir = os.path.dirname(os.getcwd())
+
+# 从环境变量 LABDEVDIR 获取路径；如果未设置，则使用上一级目录作为默认基础路径
+base_dir = os.getenv('LABDEVDIR', default_base_dir)
+
+# 使用 f-string 构造 WORKDIR 路径
+WORKDIR = f'{base_dir}/arima/workdir'
 EXECUTE = 'arima_API.py'
 COMMAND = 'python arima_API.py {task_id}'
 PARALLELISM = 4
